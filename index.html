@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Calendar</h1>
+
+  <section class="panel">
+    <h2>Add Event</h2>
+    <form id="event-form" novalidate>
+      <div id="form-errors" role="alert" hidden></div>
+      <label>Title
+        <input id="title" type="text" maxlength="100" required>
+      </label>
+      <label>Date
+        <input id="date" type="date" required>
+      </label>
+      <label>Start time
+        <input id="start" type="time" required>
+      </label>
+      <label>End time
+        <input id="end" type="time">
+      </label>
+      <button type="submit">Save event</button>
+    </form>
+  </section>
+
+  <section>
+    <div class="week-nav">
+      <button id="prev-week" type="button">&larr; Previous</button>
+      <strong id="week-label"></strong>
+      <button id="next-week" type="button">Next &rarr;</button>
+    </div>
+    <div class="scroll">
+      <div id="week-grid" class="week"></div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
