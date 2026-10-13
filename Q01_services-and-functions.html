@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Q1 - services-and-functions</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--paper:#fdfcf5;--ink:#1d3a8a;--line:#c9d8ee;--margin:#e8a0a0;--bg:#d9d6cc}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a2a28}}
+:root[data-theme="dark"]{--bg:#2a2a28}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;font-size:17px;color:var(--ink)}
+.page{max-width:820px;margin:0 auto;background:var(--paper);padding:20px 22px 40px 70px;min-height:100vh;
+background-image:linear-gradient(to right,transparent 52px,var(--margin) 52px,var(--margin) 54px,transparent 54px),repeating-linear-gradient(to bottom,transparent 0,transparent 31px,var(--line) 31px,var(--line) 32px);
+line-height:32px;box-shadow:0 0 18px rgba(0,0,0,.25)}
+h1{font-size:28px;margin:0 0 8px;font-weight:600;line-height:40px}
+h2{font-size:22px;margin:32px 0 0;font-weight:600;text-decoration:underline;line-height:32px}
+h3{font-size:18px;margin:0;font-weight:600;line-height:32px}
+p,ul,ol,pre,table{margin:0}
+ul,ol{padding-left:26px}
+pre{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;line-height:32px;overflow-x:auto;max-width:100%}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;line-height:26px;font-size:15px}
+td,th{border:1.5px solid var(--ink);padding:2px 8px;text-align:left;vertical-align:top}
+.ans{color:#b3261e}
+</style></head><body><div class="page">
+<p>OS Answers (Ref: Silberschatz, Galvin, Gagne)</p>
+<h1 style="margin-top:8px">Q1. Services and functions of an OS</h1>
+<p>An OS is a program that manages the hardware and acts as an intermediary between user and hardware. It is a <b>resource allocator</b> and a <b>control program</b>.</p>
+<h3>Services (Sec 2.1)</h3>
+<p>Helpful to the user:</p>
+<ol>
+<li><b>User interface</b> – CLI, GUI or batch. Eg: Bash, Windows Explorer.</li>
+<li><b>Program execution</b> – loads program into memory, runs it, ends it normally or with error.</li>
+<li><b>I/O operations</b> – users can't control devices directly (protection), so OS does I/O.</li>
+<li><b>File-system manipulation</b> – create, delete, read, write, search files, set permissions.</li>
+<li><b>Communication</b> – between processes, by shared memory or message passing.</li>
+<li><b>Error detection</b> – in CPU, memory, I/O devices and user programs (eg illegal memory access).</li>
+</ol>
+<p>For efficient working of system:</p>
+<ol start="7">
+<li><b>Resource allocation</b> – CPU, memory, files, devices given to many users/jobs.</li>
+<li><b>Accounting</b> – tracks which user uses how much resource.</li>
+<li><b>Protection and security</b> – controls access to resources; authentication of users.</li>
+</ol>
+<h3>Functions (Ch 1)</h3>
+<ul>
+<li><b>Process management</b> – create/delete, suspend/resume, scheduling, synchronization, deadlock handling.</li>
+<li><b>Memory management</b> – track used memory, allocate/deallocate, paging, swapping, virtual memory.</li>
+<li><b>Storage management</b> – file system, disk scheduling, free space, caching.</li>
+<li><b>I/O management</b> – buffering, caching, spooling, device drivers.</li>
+<li><b>Protection</b> – dual mode (user/kernel), memory protection, timer.</li>
+</ul>
+
+
+</div></body></html>
